@@ -6,13 +6,14 @@ import * as serviceWorker from './serviceWorker';
 import * as PIXI from 'pixi.js';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
+
 let app = new PIXI.Application({
   width: 256,
   height: 256,
   transparent: true,
 });
 
-document.body.appendChild(app.view);
+document.getElementById('root').appendChild(app.view);
 
 app.renderer.view.style.position = 'absolute';
 app.renderer.view.style.display = 'block';
