@@ -55,7 +55,7 @@ app.renderer.resize(window.innerWidth, window.innerHeight);
 // );
 
 const texture = PIXI.Texture.from(
-  'http://pixelartmaker.com/art/0fe4e7fd9d072e2.png'
+  'http://pixelartmaker.com/art/f66d0cab30fa3d1.png'
 );
 
 // Scale mode for pixelation
@@ -87,7 +87,7 @@ function createBunny(x, y) {
   bunny.anchor.set(0.5);
 
   // make it a bit bigger, so it's easier to grab
-  bunny.scale.set(0.03);
+  bunny.scale.set(0.5);
 
   // setup events for mouse + touch using
   // the pointer events
