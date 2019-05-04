@@ -4,8 +4,10 @@ import './index.css';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 import * as PIXI from 'pixi.js';
+import { install } from '@pixi/unsafe-eval';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
+install(PIXI);
 
 let app = new PIXI.Application({
   width: 256,
@@ -85,7 +87,7 @@ function createBunny(x, y) {
   bunny.anchor.set(0.5);
 
   // make it a bit bigger, so it's easier to grab
-  bunny.scale.set(0.1);
+  bunny.scale.set(0.03);
 
   // setup events for mouse + touch using
   // the pointer events
