@@ -77,6 +77,8 @@ function createBunny(x, y) {
   // create our little bunny friend..
   const bunny = new PIXI.Sprite(texture);
 
+  // bunny.zOrder = 10000;
+
   // enable the bunny to be interactive... this will allow it to respond to mouse and touch events
   bunny.interactive = true;
 
